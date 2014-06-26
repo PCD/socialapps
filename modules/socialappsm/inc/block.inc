@@ -16,6 +16,7 @@ function socialappsm_block_view($delta = '') {
   }
   
   switch($delta) {
+    case 'participate':
       if ( user_access('Participate') ) {
         $block['content'] = socialappsm_block_participate($node);
       }
