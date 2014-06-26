@@ -1,3 +1,4 @@
-.page-taxonomy-term .node-form.node-ticket-form .vertical-tabs{
+.page-taxonomy-term .node-form.node-ticket-form .vertical-tabs,
+#edit-field-concurso{
   display: none;
 }
