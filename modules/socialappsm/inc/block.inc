@@ -40,7 +40,7 @@ function socialappsm_block_participate($term) {
   } else {
     // Post a Picture Form
     module_load_include('inc', 'node', 'node.pages');
-    $form = drupal_get_form('ticket_node_form');
+    $form = drupal_get_form('ticket_node_form', $node_form);
     $output = drupal_render($form);
   }
   
