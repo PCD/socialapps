@@ -18,7 +18,7 @@ function socialappsm_block_view($delta = '') {
   switch($delta) {
     case 'participate':
       if ( user_access('Participate') ) {
-        $block['content'] = socialappsm_block_participate($node);
+        $block['content'] = socialappsm_block_participate($term);
       }
       break;
   }
@@ -28,7 +28,7 @@ function socialappsm_block_view($delta = '') {
 /**
  * Returns a chatbox that has a Raw Conversation ready to be approved.
  */
-function socialappsm_block_participate($node) {
+function socialappsm_block_participate($term) {
   $output = '';
 
   // See if logged in.
