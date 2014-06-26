@@ -1,0 +1,4 @@
+name = Social Apps Module
+description = Provides features for SocialApps
+package = PCD
+core = 7.x
