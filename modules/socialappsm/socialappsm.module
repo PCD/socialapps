@@ -1,3 +1,5 @@
 <?php
 include_once('inc/menu.inc');
 include_once('inc/hooks.inc');
+include_once('inc/blocks.inc');
+include_once('inc/permission.inc');
