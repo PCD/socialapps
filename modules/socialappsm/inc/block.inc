@@ -29,6 +29,7 @@ function socialappsm_block_view($delta = '') {
  * Returns a chatbox that has a Raw Conversation ready to be approved.
  */
 function socialappsm_block_participate($term) {
+  drupal_add_css(drupal_get_path('module', 'socialappsm') . '/css/socialappsm.css');
   $output = '';
 
   // See if logged in.
