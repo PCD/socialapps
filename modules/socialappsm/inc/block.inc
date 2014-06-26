@@ -40,6 +40,9 @@ function socialappsm_block_participate($term) {
   } else {
     // Post a Picture Form
     module_load_include('inc', 'node', 'node.pages');
+    $node_form = new stdClass;
+    $node_form->type = 'ticket';
+    $node_form->language = LANGUAGE_NONE;
     $form = drupal_get_form('ticket_node_form', $node_form);
     $output = drupal_render($form);
   }
